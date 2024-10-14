@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieApp.Views.AppPage">
+    <ContentPage.Content>
+        <StackLayout Margin="40, 20">
+            <Label 
+                Text="Add Movie Title:" 
+                FontSize="Large" 
+                FontAttributes="Bold"
+                Padding="0, 10"/>
+            <Border Stroke="gray" StrokeThickness="1">
+                <Entry x:Name="txtTitle"/>
+            </Border>
+            <Label 
+                Text="Add Movie Rating:" 
+                FontSize="Large" 
+                FontAttributes="Bold"
+                Padding="0, 10"
+                Margin="0, 20, 0, 0"/>
+            <Border Stroke="gray" StrokeThickness="1">
+                <Entry x:Name="txtRating"/>
+            </Border>
+            <Button 
+                Text="Add Movie" 
+                FontSize="Large" 
+                FontAttributes="Bold"
+                Padding="0, 10"
+                Margin="60, 40" 
+                BorderWidth="2"
+                BorderColor="Indigo"
+                Clicked="btnAddMovie_OnClicked"/>
+            <Label x:Name="txtDisplayAdded" HorizontalOptions="Center" FontSize="Large" TextColor="Purple"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

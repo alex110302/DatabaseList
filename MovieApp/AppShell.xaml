@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MovieApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MovieApp.Views"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <Tab Title="Add Movie" Icon="add_movies_tab">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:AppPage}"
+                Route="AddPage" />
+        </Tab>
+        <Tab Title="List Movie" Icon="find_movies_tab">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:ListPage}"
+                Route="ListPage" />
+        </Tab>
+    </TabBar>
+</Shell>
