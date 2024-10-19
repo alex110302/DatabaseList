@@ -25,6 +25,6 @@ public partial class ListPage : ContentPage
     
         //display data template
         lstMovies.ItemTemplate = movieTemplate;
-        lstMovies.ItemsSource = App.MovieList;
+        lstMovies.ItemsSource = App.MovieList.GetMovies();
     }
 }

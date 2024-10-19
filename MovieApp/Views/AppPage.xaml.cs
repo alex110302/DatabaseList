@@ -31,7 +31,7 @@ public partial class AppPage : ContentPage
             Movie movie = new Movie();
             movie.Title = txtTitle.Text;
             movie.Rating = txtRating.Text;
-            App.MovieList.Add(movie);
+            App.MovieList.SaveMovie(movie);
             
             Application.Current.Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
